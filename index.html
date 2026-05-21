@@ -1,97 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Ecom Customer Support Careers</title>
+  <title>Customer Support Careers</title>
 
   <meta name="robots" content="noindex">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      padding: 0;
-      background: #f4f6f9;
+      padding: 40px 20px;
       font-family: Arial, sans-serif;
-      color: #222;
+      background:
+      radial-gradient(circle at top left, #1e293b, #0f172a 55%);
+      color: white;
+      min-height: 100vh;
     }
 
     .container {
-      max-width: 720px;
-      margin: 50px auto;
-      background: white;
-      padding: 40px;
-      border-radius: 16px;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+      max-width: 760px;
+      margin: auto;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 28px;
+      padding: 50px;
+      backdrop-filter: blur(16px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.12);
+      color: rgba(255,255,255,0.85);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      margin-bottom: 18px;
     }
 
     h1 {
-      margin-top: 0;
-      font-size: 36px;
-      margin-bottom: 10px;
+      margin: 0;
+      font-size: 46px;
+      line-height: 1.1;
+      margin-bottom: 16px;
     }
 
     .subtitle {
-      color: #666;
-      line-height: 1.6;
-      margin-bottom: 35px;
+      color: rgba(255,255,255,0.72);
+      line-height: 1.7;
+      font-size: 16px;
+      margin-bottom: 38px;
     }
 
     label {
-      font-weight: bold;
       display: block;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
+      font-size: 15px;
+      font-weight: bold;
+      color: white;
     }
 
     input,
-    textarea,
-    select {
+    select,
+    textarea {
       width: 100%;
-      padding: 14px;
-      border-radius: 10px;
-      border: 1px solid #ccc;
-      margin-bottom: 22px;
+      padding: 16px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.08);
+      color: white;
       font-size: 15px;
-      box-sizing: border-box;
+      margin-bottom: 24px;
+      outline: none;
+      transition: 0.2s ease;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: rgba(255,255,255,0.25);
+      background: rgba(255,255,255,0.11);
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: rgba(255,255,255,0.45);
+    }
+
+    select option {
+      color: black;
     }
 
     textarea {
       resize: vertical;
     }
 
+    .upload-box {
+      padding: 18px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.05);
+      border: 1px dashed rgba(255,255,255,0.15);
+      margin-bottom: 24px;
+    }
+
     button {
       width: 100%;
-      background: #000;
-      color: white;
+      padding: 18px;
       border: none;
-      padding: 16px;
-      border-radius: 10px;
+      border-radius: 16px;
+      background: white;
+      color: black;
       font-size: 16px;
+      font-weight: bold;
       cursor: pointer;
-      transition: 0.2s;
+      transition: 0.2s ease;
     }
 
     button:hover {
-      opacity: 0.9;
+      transform: translateY(-2px);
+      opacity: 0.95;
     }
 
-    .footer-text {
-      margin-top: 25px;
-      font-size: 13px;
-      color: #777;
+    .footer {
+      margin-top: 28px;
       text-align: center;
+      color: rgba(255,255,255,0.45);
+      font-size: 13px;
     }
 
-    @media (max-width: 768px) {
+    @media(max-width:768px) {
+
+      body {
+        padding: 20px 12px;
+      }
+
       .container {
-        margin: 20px;
-        padding: 25px;
+        padding: 28px;
       }
 
       h1 {
-        font-size: 28px;
+        font-size: 34px;
       }
+
     }
   </style>
 </head>
@@ -100,71 +159,97 @@
 
   <div class="container">
 
-    <h1>Join Our Customer Support Team</h1>
+    <div class="badge">
+      Remote Position • Ecommerce Support
+    </div>
+
+    <h1>
+      Join Our Customer Support Team
+    </h1>
 
     <p class="subtitle">
-      We work with international ecommerce brands and are looking for
-      motivated, reliable, and professional customer support agents
-      to join our growing remote team.
+      We work with fast-growing international ecommerce brands and are looking
+      for motivated, professional, and reliable remote customer support agents
+      to join our growing team.
     </p>
 
-    <form action="https://formsubmit.co/aileen@acentecom.com" method="POST">
+    <form action="https://formsubmit.co/aileen@acentecom.com" method="POST" enctype="multipart/form-data">
 
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_subject" value="New Customer Support Application">
       <input type="hidden" name="_template" value="table">
 
       <label>Full Name</label>
-      <input type="text" name="Full Name" required>
+      <input type="text" name="Full Name" placeholder="Your full name" required>
 
       <label>Email Address</label>
-      <input type="email" name="Email Address" required>
+      <input type="email" name="Email Address" placeholder="you@example.com" required>
 
       <label>WhatsApp Number</label>
-      <input type="text" name="WhatsApp Number" required>
+      <input type="text" name="WhatsApp Number" placeholder="+1 ..." required>
 
       <label>Country</label>
-      <input type="text" name="Country" required>
-
-      <label>Timezone</label>
-      <input type="text" name="Timezone" required>
+      <input type="text" name="Country" placeholder="Your country" required>
 
       <label>English Level</label>
       <select name="English Level" required>
         <option value="">Select your level</option>
-        <option>Basic</option>
         <option>Intermediate</option>
         <option>Advanced</option>
         <option>Fluent</option>
       </select>
 
-      <label>Years of Customer Support Experience</label>
-      <input type="text" name="Customer Support Experience">
+      <label>Do you have ecommerce customer support experience?</label>
+      <select name="Ecommerce Experience" required>
+        <option value="">Select an option</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
 
-      <label>Experience with Shopify, Gorgias, Zendesk or Ecommerce Platforms</label>
-      <textarea name="Platform Experience" rows="4"></textarea>
+      <label>Which platforms have you worked with?</label>
+      <select name="Platforms Used" required>
+        <option value="">Select an option</option>
+        <option>Shopify</option>
+        <option>Gorgias</option>
+        <option>Zendesk</option>
+        <option>Freshdesk</option>
+        <option>None</option>
+      </select>
 
-      <label>Expected Monthly Salary (USD)</label>
-      <input type="text" name="Expected Salary">
+      <label>Can you start within 3 days?</label>
+      <select name="Start Within 3 Days" required>
+        <option value="">Select an option</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
 
-      <label>Availability / Preferred Shift</label>
-      <input type="text" name="Availability">
+      <label>Paste Google Drive Link to Your Resume</label>
+      <input type="text" name="Resume Link" placeholder="https://drive.google.com/...">
 
-      <label>Paste Google Drive Link to Your CV/Resume</label>
-      <input type="text" name="Resume Link">
+      <label>Attach Resume (PDF, DOC, DOCX)</label>
+
+      <div class="upload-box">
+        <input type="file" name="attachment" accept=".pdf,.doc,.docx">
+      </div>
 
       <label>
         A customer says their package never arrived and is demanding
         a refund immediately. How would you respond?
       </label>
 
-      <textarea name="Customer Scenario Response" rows="6"></textarea>
+      <textarea
+        name="Customer Scenario Response"
+        rows="6"
+        placeholder="Write your response here..."
+      ></textarea>
 
-      <button type="submit">Submit Application</button>
+      <button type="submit">
+        Submit Application
+      </button>
 
     </form>
 
-    <div class="footer-text">
+    <div class="footer">
       Only shortlisted applicants will be contacted.
     </div>
 
